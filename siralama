@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh) {
+        int s1,s2,s3,kucuk,orta,buyuk;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("1.sayıyı giriniz: ");
+        s1 = input.nextInt();
+        System.out.println("2.sayıyı giriniz: ");
+        s2 = input.nextInt();
+        System.out.println("3.sayıyı giriniz: ");
+        s3 = input.nextInt();
+
+       kucuk=s1;
+       orta=s1;
+       buyuk=s1;
+       if (s2<kucuk){kucuk=s2;}
+       if (s3<kucuk){kucuk=s3;}
+       if(s2<s3){orta=s2;buyuk=s3;}
+       else {orta=s3;buyuk=s2;}
+        System.out.println("sıralama "+kucuk +"," + orta+"," + buyuk);
+
+    }
+
+}
+
+
+
